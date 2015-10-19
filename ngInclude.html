@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app>
+<head>
+	<title></title>
+	<link type="text/css" rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="bower_components/angular/angular-1.2.5.js"></script>
+	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+	<div ng-include="'header.html'"></div>
+	<div ng-init="url='about.html'">
+		<ul class="nav nav-pills">
+			<li class="active"><a ng-click="url='about.html'" data-toggle="tab" href class="active">About</a></li>
+			<li><a ng-click="url='Email.html'" data-toggle="tab" href>Email</a></li>
+			<li><a ng-click="url='Profile.html'" data-toggle="tab" href>Profile</a></li>
+		</ul>
+		<div ng-include="url"></div>
+	</div>
+	<div ng-include="'footer.html'"></div>
+</body>
+<script type="text/javascript">
+
+</script>
+</html>
